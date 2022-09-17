@@ -3,65 +3,25 @@ import java.lang.Exception
 
 fun main(args: Array<String>) {
 
+ val firstList = listOf(10,43,54,32,23)
 
-    val abc = listOf<Int>(10,23,40,98,65, 100,3232323,2323)
+    val secondList = listOf(43,342 ,234,64,45)
 
-    val number = 0
 
-    when(number){
+    firstList.forEachIndexed { index, num ->
 
-        10 -> { println(10) }
+        val sum = num + secondList[index]
 
-        23 -> {
-            println(23)
-        }
+        println("sum of index $index is $sum")
+    }
 
-        40 -> { println(10) }
 
-        98 -> { println("booom!! its" + 98) }
-
-        else -> {
-
-            try {
-                throw Exception()
-                println(number)
-
-            }catch (e:Exception){
-
-                println("ooops it error")
-            }
-
-        }
     }
 
 
 
 
 
-    abc.forEach {
-        println(it)
-    }
-
-    abc.forEachIndexed { index, num ->
-        println("index: $index \nnumber: $num\n\n")
-    }
-
-
-    var a = 7
-    while (a==abc.size){
-
-        println("hello")
-        a ++
-    }
-
-
-
-
-
-
-
-
-}
 
 
 
