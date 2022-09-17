@@ -21,10 +21,10 @@ fun main(args: Array<String>) {
 
 
 
-    // three persons
-//    FirstPerson().getAge()
-//    FirstPerson().firstAge = 8
-//    FirstPerson().getAge()
+//     three persons
+    FirstPerson().getAge()
+    FirstPerson().firstAge = 8
+    FirstPerson().getAge()
 
 }
 
