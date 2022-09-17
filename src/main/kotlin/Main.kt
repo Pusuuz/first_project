@@ -2,62 +2,57 @@
 
 
 
+
 fun main(args: Array<String>) {
 
 
-    val a: Int = 2
+    //one person
+    val alisher = FirstPerson()
+    alisher.firstAge = 16
+    alisher.getAge()
 
-    val b: String = "fhfh"
+  val madamin = SecondPerson()
+    madamin.secondAge = 5
+    madamin.getAge()
 
-    var c: Boolean = true
-
-    c = false
-
-
-    val collection = listOf<Int>( 23, 77, 88, 99)
-
-    println(collection[3])
-
-//    if (a>b && a==c ){
-//        print("A bolshe")
-//
-//    }else if (a==b || b>c){
-//        println("ravni")
-//
-//    }else{
-//        println("b bolshe")
-//    }
+    println(
+        alisher.firstAge+madamin.secondAge
+    )
 
 
 
-
+    // three persons
+//    FirstPerson().getAge()
+//    FirstPerson().firstAge = 8
+//    FirstPerson().getAge()
 
 }
 
 
 
 
+class FirstPerson(){
+
+    var firstAge = 23
 
 
-
-
-
-
-class Car(){
-
-    var state = "Stop"
-
-
-    fun turnLeft(){
-        println("Madamin Left")
+    fun getAge (){
+        println("first person$firstAge")
     }
 
-    fun turnRight(){
-        println("Madamin Right")
-    }
 
-    fun startCar(){
-        state="move"
-        println(state)
+    fun getFriend(){
+        println("new friend ${this.javaClass.name}")
+    }
+}
+
+
+
+
+class SecondPerson(){
+    var secondAge = 10
+
+    fun getAge (){
+        println("SecondPerson$secondAge")
     }
 }
