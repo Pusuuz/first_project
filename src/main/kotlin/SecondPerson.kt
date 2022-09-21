@@ -1,8 +1,8 @@
-class SecondPerson() {
-    var secondAge = 10
-
-    fun getAge() {
-        println("SecondPerson$secondAge")
-    }
-
-}
+//class SecondPerson() {
+//    var secondAge = 10
+//
+//    fun getAge() {
+//        println("SecondPerson$secondAge")
+//    }
+//
+//}
